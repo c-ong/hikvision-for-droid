@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:id="@id/playback_controlbar" android:background="@drawable/liveview_control_bg" android:layout_width="fill_parent" android:layout_height="@dimen/controlbar_height" android:layout_alignParentBottom="true">
+        <ImageView android:background="@drawable/playback_playbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.mcu.iVMS.component.TimeBar android:layout_gravity="center" android:id="@id/timebar_control" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/playback_view_container" android:background="@drawable/liveview_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/playback_controlbar" android:layout_alignParentTop="true">
+        <com.mcu.iVMS.component.LiveViewGroup android:id="@id/playback_view_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/playback_view_item" layout="@layout/live_view_item" />
+        </com.mcu.iVMS.component.LiveViewGroup>
+        <include android:id="@id/playback_landscape_pop_frame" layout="@layout/playback_landscape_controlbar_frame" />
+        <include android:id="@id/playback_capturepic_toast_frame" android:layout_centerInParent="true" layout="@layout/capture_pic_toast" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/playback_delete_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/playback_delete_imageview" android:background="@drawable/delete_dis" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

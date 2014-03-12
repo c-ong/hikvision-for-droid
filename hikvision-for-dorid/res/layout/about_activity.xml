@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="13.5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/about_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/common_textsize_large_26sp" android:textStyle="bold" android:textColor="@*android:color/background_dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/about_line" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/common_textsize_small_14sp" android:layout_gravity="center_horizontal" android:id="@id/about_version_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_version_word" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/about_newfeature_button" android:background="@drawable/about_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/common_textsize_small_16sp" android:textColor="@*android:color/black" android:id="@id/about_newfeature_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kVersionFeatures" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/about_update_button" android:background="@drawable/about_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/common_textsize_small_16sp" android:textColor="@drawable/textview_textcolor_selector" android:id="@id/about_update_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kApplicationUpgrade" android:layout_centerInParent="true" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/common_textsize_small_16sp" android:textColor="#ffff0000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_new_word" />
+                <TextView android:textSize="@dimen/common_textsize_small_16sp" android:textColor="@*android:color/black" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/kApplicationUpgrade" />
+                <TextView android:textSize="@dimen/common_textsize_small_14sp" android:textColor="#ffff0000" android:id="@id/about_update_new_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_new_word" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/about_feedback_button" android:background="@drawable/about_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/common_textsize_small_16sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kMail" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cloudmessage_linkage_liveview" android:layout_width="200.0dip" android:layout_height="48.0dip" android:text="@string/kLiveView" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cloudmessage_linkage_playback" android:layout_width="200.0dip" android:layout_height="48.0dip" android:text="@string/kPlayback" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

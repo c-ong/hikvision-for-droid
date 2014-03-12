@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/cloudmessage_main_scroolview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/leba_bg_layout">
+                <LinearLayout android:id="@id/cloudmessage_main_goto_setactivity" style="@style/leba_bg_top_layout">
+                    <TextView android:textSize="@dimen/common_textsize_small_18sp" android:textColor="@drawable/textview_textcolor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/cloudmessage_set" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/set_put_away" />
+                </LinearLayout>
+                <View android:background="@drawable/leba_shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:id="@id/cloudmessage_main_goto_infoactivity" style="@style/leba_bg_bottom_layout">
+                    <TextView android:textSize="@dimen/common_textsize_small_18sp" android:textColor="@drawable/textview_textcolor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/cloudmessage_info" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/set_put_away" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

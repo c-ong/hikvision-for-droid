@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcu.iVMS.images.ImageViewTouch android:id="@id/images_view_imageview" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" android:layout_centerInParent="true" android:contentDescription="@string/nothing" />
+    <Button android:id="@id/images_view_play_btn" android:background="@drawable/image_videoplay_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />"
+</RelativeLayout>

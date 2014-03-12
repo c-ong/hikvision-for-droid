@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/landscape_liveview_pageindicator_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.mcu.iVMS.component.PageIndicatorsView android:id="@id/landscape_liveview_pageindicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.mcu.iVMS.component.LandscapeToolbar android:orientation="vertical" android:id="@id/landscape_liveview_control_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/landscape_liveview_controlbar_content" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/landscape_liveview_quality_control_bar" android:background="@drawable/fullscreen_bar" android:paddingLeft="13.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="9.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/common_textsize_small_14sp" android:textColor="@color/quality_button_colorstatelist_selector" android:id="@id/landscape_liveview_quality_clear_button" android:background="@drawable/landscape_quality_button_bg_selector" android:clickable="false" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/kQuality1" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <Button android:textSize="@dimen/common_textsize_small_14sp" android:textColor="@color/quality_button_colorstatelist_selector" android:id="@id/landscape_liveview_quality_balance_button" android:background="@drawable/landscape_quality_button_bg_selector" android:clickable="false" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/kQuality2" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <Button android:textSize="@dimen/common_textsize_small_14sp" android:textColor="@color/quality_button_colorstatelist_selector" android:id="@id/landscape_liveview_quality_fluent_button" android:background="@drawable/landscape_quality_button_bg_selector" android:clickable="false" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/kQuality3" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <Button android:textSize="@dimen/common_textsize_small_14sp" android:textColor="@color/quality_button_colorstatelist_selector" android:id="@id/landscape_liveview_quality_custom_button" android:background="@drawable/landscape_quality_button_bg_selector" android:clickable="false" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/kQualityCustom" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_quality_back_button" android:background="@drawable/landscape_bar_back_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/landscape_liveview_ptz_control_bar" android:background="@drawable/fullscreen_bar" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="12.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_auto" android:background="@drawable/landscape_ptz_auto_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_focal_length" android:background="@drawable/landscape_ptz_focal_length_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_focus" android:background="@drawable/landscape_ptz_focus_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_aperture" android:background="@drawable/landscape_ptz_aperture_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_preset_point" android:background="@drawable/landscape_ptz_preset_point_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_bar_back" android:background="@drawable/landscape_bar_back_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/landscape_liveview_controlbar" android:background="@drawable/fullscreen_bar" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="16.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/landscape_liveview_capture_button" android:background="@drawable/landscape_capture_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_record_button" android:background="@drawable/landscape_record_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_ptz_button" android:background="@drawable/landscape_ptz_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_quality_button" android:background="@drawable/landscape_quality_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_delete_button" android:background="@drawable/landscape_delete_all_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_sound_button" android:background="@drawable/landscape_sound_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_voicetalk_button" android:background="@drawable/landscape_voicetalk_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_alarm_button" android:background="@drawable/landscape_alarm_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <ImageButton android:id="@id/landscape_liveview_enlarge_button" android:background="@drawable/landscape_enlarge_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.mcu.iVMS.component.LandscapeToolbar>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/liveview_controlbar" android:background="@drawable/liveview_control_bg" android:layout_width="fill_parent" android:layout_height="@dimen/controlbar_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/liveview_pageindicator_frame" android:background="@drawable/liveview_skate_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mcu.iVMS.component.PageIndicatorsView android:id="@id/liveview_pageindicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/alarm_frame" android:background="@drawable/liveview_skate_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/alarm_frame" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ptz_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <include layout="@layout/ptz_control_layout" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/quality_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <include layout="@layout/quality_control_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/liveview_liveviewgroup_container" android:background="@drawable/liveview_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/liveview_controlbar" android:layout_alignParentTop="true">
+        <com.mcu.iVMS.component.LiveViewGroup android:id="@id/liveview_liveviewgroup" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/liveview_liveitem1" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem2" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem3" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem4" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem5" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem6" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem7" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem8" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem9" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem10" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem11" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem12" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem13" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem14" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem15" layout="@layout/live_view_item" />
+            <include android:id="@id/liveview_liveitem16" layout="@layout/live_view_item" />
+        </com.mcu.iVMS.component.LiveViewGroup>
+        <RelativeLayout android:id="@id/ptz_pop_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ptz_pop_panel" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/portrait_pop_frame_bottom_margin" android:layout_alignParentBottom="true">
+                <include android:layout_gravity="center_vertical" android:id="@id/ptz_pop_panel_content" layout="@layout/ptz_pop_content_frame" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/landscape_alarm_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/landscape_pop_frame_bottom_margin" android:layout_alignParentBottom="true">
+                <com.mcu.iVMS.component.AlarmScrollBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/landscape_alarm_bar" android:background="@drawable/landscape_alarmbar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:id="@id/quality_custom_pop_frame" layout="@layout/quality_custom_pop_frame" />
+        <include android:id="@id/landscape_liveview_pop_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/landscape_livecontrol_frame" />
+        <include android:id="@id/realplay_capturepic_toast_frame" layout="@layout/capture_pic_toast" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/liveview_delete_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/liveview_delete_imageview" android:background="@drawable/delete_dis" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

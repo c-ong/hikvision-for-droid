@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptz_pop_focal_length_frame" android:background="@drawable/ptz_up_box_bg" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="7.0">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/ptz_pop_focal_length_add" android:background="@drawable/ptz_narrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageButton android:background="@drawable/add_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kPtzZoom" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <ImageButton android:background="@drawable/subtract_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/ptz_pop_focal_length_subtract" android:background="@drawable/ptz_amplification_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptz_pop_focus_frame" android:background="@drawable/ptz_up_box_bg" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="7.0">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/ptz_pop_focus_add" android:background="@drawable/ptz_focus_front_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageButton android:background="@drawable/add_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kPtzFocus" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <ImageButton android:background="@drawable/subtract_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/ptz_pop_focus_subtract" android:background="@drawable/ptz_focus_behind_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptz_pop_aperture_frame" android:background="@drawable/ptz_up_box_bg" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="7.0">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/ptz_pop_aperture_add" android:background="@drawable/ptz_aperture_big_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageButton android:background="@drawable/add_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kPtzIris" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <ImageButton android:background="@drawable/subtract_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/ptz_pop_aperture_subtract" android:background="@drawable/ptz_aperture_small_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ptz_pop_preset_frame" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/ptz_presetpanelbg1" android:paddingLeft="10.0dip" android:paddingTop="9.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="@dimen/common_textsize_small_16sp" android:id="@id/ptz_pop_preset_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/kEnterPreset" android:maxLength="3" android:numeric="integer" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ptz_presetpanelbg2" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="2.5">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/common_textsize_small_16sp" android:id="@id/ptz_pop_preset_get" android:background="@drawable/ptz_presetbtn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kCall" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+            <Button android:textSize="@dimen/common_textsize_small_16sp" android:id="@id/ptz_pop_preset_set" android:background="@drawable/ptz_presetbtn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kSet" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

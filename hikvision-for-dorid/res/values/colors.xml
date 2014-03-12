@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#ffffff00</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="gray">#ff606060</color>
+    <color name="gray_transplate">#66606060</color>
+    <color name="transplate">#000000ff</color>
+    <color name="transpluent">#22000000</color>
+    <color name="button_unselected">#ff54acea</color>
+    <color name="button_selected">#ff419de4</color>
+    <color name="shape_line">#ffcccccc</color>
+    <color name="white">#ffffffff</color>
+    <color name="text_enable">#ff000000</color>
+    <color name="text_disable">#ff7f7f7f</color>
+    <color name="device_startlive_button">#ff670000</color>
+    <color name="window_selected_color">#ffffccff</color>
+    <color name="images_listview_date_info_layout_bg">#ff333333</color>
+    <color name="newfeature_word_color">#ffcccccc</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

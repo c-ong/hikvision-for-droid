@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ptzbar_height" android:weightSum="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/ptz_auto" android:background="@drawable/ptz_auto_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/nothing" />
+    <ImageButton android:id="@id/ptz_focal_length" android:background="@drawable/ptz_focal_length_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/nothing" />
+    <ImageButton android:id="@id/ptz_focus" android:background="@drawable/ptz_focus_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/nothing" />
+    <ImageButton android:id="@id/ptz_aperture" android:background="@drawable/ptz_aperture_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/nothing" />
+    <ImageButton android:id="@id/ptz_preset_point" android:background="@drawable/ptz_preset_point_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/nothing" />
+</LinearLayout>

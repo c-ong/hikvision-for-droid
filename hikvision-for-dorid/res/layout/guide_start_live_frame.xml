@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <RelativeLayout android:id="@id/guide_start_live_button_top" android:background="@drawable/guide1_2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:layout_gravity="center_horizontal" android:clickable="false" android:text="@string/kGuide3Description1" style="@style/guide_text_style" />
+                <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/guide_arrow_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <ImageView android:id="@id/guide_start_live_button_left" android:background="@drawable/guide1_2" android:clickable="true" android:layout_width="50.0dip" android:layout_height="fill_parent" android:contentDescription="@string/nothing" />
+            <ImageView android:textSize="@dimen/common_textsize_small_14sp" android:background="@drawable/guide2_3" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/nothing" />
+            <ImageView android:id="@id/guide_start_live_button_right" android:background="@drawable/guide1_2" android:clickable="true" android:layout_width="50.0dip" android:layout_height="fill_parent" android:contentDescription="@string/nothing" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

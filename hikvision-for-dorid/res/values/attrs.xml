@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customCheckBoxStyle" format="reference" />
+    <attr name="showStyle">
+        <enum name="all" value="0" />
+        <enum name="some" value="1" />
+        <enum name="no" value="2" />
+    </attr>
+    <attr name="currentPage" format="integer" />
+    <attr name="totalPages" format="integer" />
+    <attr name="isMultiSelect" format="boolean" />
+    <attr name="itemDrawable" format="reference" />
+</resources>

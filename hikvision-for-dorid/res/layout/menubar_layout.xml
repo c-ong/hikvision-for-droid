@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/menu_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/menutab_up_height" android:weightSum="126.0">
+        <FrameLayout android:id="@id/menu_live" android:background="@drawable/menu_bar_bg_leftup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="43.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/menu_live_select" android:background="@drawable/menu_sel_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/menutab_item_selectimage_bottom_margin" android:contentDescription="@string/nothing" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/menu_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menutab_item_top_margin" android:contentDescription="@string/nothing" />
+                <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_13sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/menu_live_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kLiveView" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/menu_playback" android:background="@drawable/menu_bar_bg_middleup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="40.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/menu_playback_select" android:background="@drawable/menu_sel_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/menutab_item_selectimage_bottom_margin" android:contentDescription="@string/nothing" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/menu_playback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menutab_item_top_margin" android:contentDescription="@string/nothing" />
+                <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_13sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/menu_playback_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kPlayback" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/menu_devicemanager" android:background="@drawable/menu_bar_bg_rightup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="43.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/menu_devicemanager_select" android:background="@drawable/menu_sel_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/menutab_item_selectimage_bottom_margin" android:contentDescription="@string/nothing" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/menu_set_equipment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menutab_item_top_margin" android:contentDescription="@string/nothing" />
+                <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_13sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/menu_devicemanager_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kDeviceManage" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/menutab_down_height" android:weightSum="126.0">
+        <FrameLayout android:id="@id/menu_picture_video_manager" android:background="@drawable/menu_bar_bg_leftdown" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="43.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/menu_picture_video_manager_select" android:background="@drawable/menu_sel_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/menutab_item_selectimage_bottom_margin" android:contentDescription="@string/nothing" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/menu_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menutab_item_top_margin" android:contentDescription="@string/nothing" />
+                <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_13sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/menu_picture_video_manager_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kImageManage" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/menu_configure" android:background="@drawable/menu_bar_bg_middledown" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="40.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/menu_configure_select" android:background="@drawable/menu_sel_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/menutab_item_selectimage_bottom_margin" android:contentDescription="@string/nothing" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/menu_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menutab_item_top_margin" android:contentDescription="@string/nothing" />
+                <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_13sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/menu_configure_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kConfig" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/menu_cloudmessage" android:background="@drawable/menu_bar_bg_rightdown" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="43.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/menu_cloudmessage_select" android:background="@drawable/menu_sel_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/menutab_item_selectimage_bottom_margin" android:contentDescription="@string/nothing" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/menu_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menutab_item_top_margin" android:contentDescription="@string/nothing" />
+                <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_13sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/menu_cloudmessage_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kAlarmManage" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

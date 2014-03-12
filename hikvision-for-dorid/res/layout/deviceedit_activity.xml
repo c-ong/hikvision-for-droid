@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/deviceedit_deviceinfo_scrollview" android:background="@drawable/ellipse_shape" android:paddingLeft="9.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="380.0dip" android:stretchColumns="1">
+            <TableRow>
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:text="@string/kAlias" />
+                <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_devicename_editview" android:background="@*android:color/transparent" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:hint="@string/kAliasPlaceHolder" android:singleLine="true" android:maxLength="32" />
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_devicename_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow>
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center_vertical" android:text="@string/kRegType" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/deviceedit_deviceregtype_layout" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:weightSum="1.0">
+                    <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:layout_gravity="center_vertical" android:id="@id/deviceedit_deviceregtype_textview" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:id="@id/deviceedit_deviceregtype_arrow" android:background="@drawable/set_put_away" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                </LinearLayout>
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_deviceregtype_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow android:id="@id/deviceedit_ipdomain_address_row">
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:id="@id/deviceedit_ipdomain_address_textview" android:text="@string/kAddress" />
+                <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_ipdomain_address_editview" android:background="@*android:color/transparent" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:hint="@string/kAddressPlaceHolder" android:singleLine="true" android:maxLength="128" />
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_ipdomain_address_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow android:id="@id/deviceedit_ddns_address_row">
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:id="@id/deviceedit_ddns_address_textview" android:text="@string/kServerAddress" />
+                <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_ddns_address_editview" android:background="@*android:color/transparent" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:hint="@string/kServerAddressPlaceHolder" android:singleLine="true" android:maxLength="128" />
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_ddns_address_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow android:id="@id/deviceedit_ddns_marker_row">
+                <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal">
+                    <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/deviceedit_ddns_marker_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kDeviceDomain" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin">
+                    <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_ddns_marker_editview" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/device_editview_height" android:hint="@string/kDeviceDomainPlaceHolder" android:singleLine="true" android:maxLength="64" android:layout_toLeftOf="@id/deviceedit_ddns_marker_twodimensioncode_view" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" />
+                    <LinearLayout android:id="@id/deviceedit_ddns_marker_twodimensioncode_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:background="@drawable/set_dbarcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_ddns_marker_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow android:id="@id/deviceedit_ipdomain_port_row">
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:id="@id/deviceedit_ipdomain_port_textview" android:text="@string/kPort" />
+                <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_ipdomain_port_editview" android:background="@*android:color/transparent" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:text="@string/kPortPlaceHolder" android:singleLine="true" android:maxLength="5" android:numeric="integer" android:inputType="number" />
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_ipdomain_port_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow>
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:text="@string/kUserName" />
+                <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_username_editview" android:background="@*android:color/transparent" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:text="@string/default_username" android:hint="@string/kUserNamePlaceHolder" android:singleLine="true" android:maxLength="32" />
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_username_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow>
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:text="@string/kPassword" />
+                <EditText android:textSize="@dimen/device_editview_textsize" android:id="@id/deviceedit_password_editview" android:background="@*android:color/transparent" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:text="@string/default_password" android:password="true" android:singleLine="true" android:maxLength="16" />
+            </TableRow>
+            <ImageView android:id="@id/deviceedit_password_line" android:background="@drawable/devide_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <TableRow>
+                <TextView android:textSize="@dimen/device_editview_textsize" android:textColor="@*android:color/black" android:gravity="left" android:layout_gravity="center_vertical" android:text="@string/kChannelNum" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/deviceedit_channel_count_layout" android:layout_width="160.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="@dimen/device_editview_leftmargin" android:weightSum="1.0">
+                    <EditText android:enabled="false" android:textSize="@dimen/device_editview_textsize" android:layout_gravity="center_vertical" android:id="@id/deviceedit_channel_count_editview" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/device_editview_height" android:hint="@string/nothing" android:singleLine="true" android:inputType="number" />
+                    <EditText android:enabled="false" android:textSize="@dimen/device_editview_textsize" android:layout_gravity="center_vertical" android:id="@id/deviceedit_channel_error_editview" android:background="@*android:color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/device_editview_height" android:layout_marginLeft="10.0dip" android:text="@string/nothing" android:maxLines="2" android:layout_weight="1.0" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/common_textsize_small_18sp" android:id="@id/deviceedit_startlive_button" android:background="@drawable/device_startlive_ellipse_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:text="@string/kStartLiveView" android:layout_below="@id/deviceedit_deviceinfo_scrollview" />
+    <RelativeLayout android:id="@id/deviceedit_progress_frame" android:background="@drawable/devicemanager_progress_ellipse_shape" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/deviceedit_deviceinfo_scrollview">
+        <ProgressBar android:id="@id/deviceedit_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

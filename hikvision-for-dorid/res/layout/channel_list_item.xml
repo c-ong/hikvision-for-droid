@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:common="http://schemas.android.com/apk/res/org.ong.android.examples.hikvision">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/common_listview_item_height" android:weightSum="1.0">
+        <ImageView android:id="@id/channel_fold_unfold_imageview" android:background="@drawable/list_put_away" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:orientation="vertical" android:layout_width="52.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_listitem_icon" android:background="@drawable/list_equipment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_18sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:id="@id/channel_listitem_text_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textSize="@dimen/common_textsize_small_12sp" android:textColor="@android:color/white" android:id="@id/channel_listitem_text_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/channel_listitem_number_imageview" android:background="@drawable/list_number_00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+        <LinearLayout android:id="@id/channel_listitem_state_layout" android:paddingLeft="7.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.mcu.iVMS.component.CheckBoxImageView android:id="@id/channel_listitem_state_imageview" android:background="@drawable/channel_itembox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" common:showStyle="no" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

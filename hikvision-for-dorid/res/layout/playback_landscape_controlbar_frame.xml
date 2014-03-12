@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcu.iVMS.component.PlayBackLandscapeToolBar android:gravity="center_vertical" android:id="@id/playback_landscape_toolbar" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/playback_landscape_toolbar_layout" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/playback_fullscreen_toolbar_left" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_landscape_pause_play_button" android:background="@drawable/landscape_pause_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/playback_landscape_timebar_frame" android:background="@drawable/playback_fullscreen_toolbar_center" android:layout_width="811.0dip" android:layout_height="fill_parent">
+                <com.mcu.iVMS.component.TimeBar android:layout_gravity="center_vertical" android:id="@id/landscape_timebar_control" android:layout_width="fill_parent" android:layout_height="@dimen/playback_progressbar_height" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/playback_fullscreen_toolbar_right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_landscape_capture_button" android:background="@drawable/landscape_capture_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_landscape_record_button" android:background="@drawable/landscape_playback_record_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_landscape_sound_button" android:background="@drawable/landscape_sound_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_landscape_enlarge_button" android:background="@drawable/landscape_enlarge_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_landscape_delete_all_button" android:background="@drawable/landscape_delete_all_selector" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.mcu.iVMS.component.PlayBackLandscapeToolBar>
+</RelativeLayout>

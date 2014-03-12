@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/images_viewpager_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.mcu.iVMS.images.ImageViewPager android:id="@id/images_viewpager" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/image_navigationbar_layout" android:background="@drawable/image_top_bar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:id="@id/image_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <Button android:id="@id/image_view_back_btn" android:background="@drawable/image_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/image_view_toolbar_layout" android:background="@drawable/image_below_bar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <Button android:id="@id/image_view_delete_btn" android:background="@drawable/image_delete_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="60.0dip" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow_sub_left_down" android:background="@drawable/arrow_right_up_list" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@string/nothing" />
+    <ImageView android:id="@id/arrow_sub_right_down" android:background="@drawable/arrow_left_up_list" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/nothing" />
+    <ImageView android:id="@id/arrow_sub_right_up" android:background="@drawable/arrow_left_down_list" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/nothing" />
+    <ImageView android:id="@id/arrow_sub_left_up" android:background="@drawable/arrow_right_down_list" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/nothing" />
+</RelativeLayout>

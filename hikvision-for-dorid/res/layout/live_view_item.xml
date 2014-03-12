@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcu.iVMS.component.LiveViewItemContainer android:padding="@dimen/window_container_space" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mcu.iVMS.component.WindowLinearLayout android:orientation="vertical" android:id="@id/liveview_surface_infotext_layout" android:background="#00000000" android:padding="@dimen/surface_container_space" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/liveview_playwindow_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.mcu.iVMS.component.CustomScrollView android:id="@id/liveview_onewindow_scrollview" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.mcu.iVMS.component.CustomSurfaceView android:id="@id/liveview_surfaceview" android:background="@*android:color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.mcu.iVMS.component.CustomScrollView>
+            <ProgressBar android:layout_gravity="center" android:id="@id/liveview_progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/liveview_flash_imageview" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/nothing" />
+            <ImageView android:layout_gravity="center" android:id="@id/liveview_refresh_imageview" android:background="@drawable/liveview_view_refresh_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+            <include android:id="@id/liveview_arrow_all_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/arrow_all_container" />
+            <include android:id="@id/arrow_add_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/arrow_add_focallength" />
+            <include android:id="@id/arrow_sub_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/arrow_sub_focallength" />
+            <com.mcu.iVMS.component.PTZPopFrame android:id="@id/liveview_ptz_control_frame" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:id="@id/liveview_record_frame" android:padding="8.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/record_round_shape" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/common_textsize_small_12sp" android:gravity="center_vertical" android:id="@id/liveview_liveinfo_textview" android:background="@color/gray_transplate" android:layout_width="fill_parent" android:layout_height="@dimen/window_text_height" android:singleLine="true" />
+    </com.mcu.iVMS.component.WindowLinearLayout>
+</com.mcu.iVMS.component.LiveViewItemContainer>

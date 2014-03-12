@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/introduction_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/arrowhead_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/common_textsize_small_16sp" android:textColor="@color/newfeature_word_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/newfeature_top_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kIntroduction1Description1" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/newfeature_center_imageview" android:background="@drawable/e_introduction1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/common_textsize_small_18sp" android:textColor="@color/newfeature_word_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/newfeature_bottom_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kIntroduction1Description2" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="36.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/logo_4500" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <LinearLayout android:id="@id/newfeature_goto_layout" style="@style/guide_skip_layout_style">
+                <TextView android:id="@id/newfeature_goto_word" android:text="@string/kIntroductionSkipDescription" style="@style/guide_skip_textview_style" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

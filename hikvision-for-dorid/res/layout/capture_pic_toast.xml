@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/capture_pic_toast_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/capture_pic_toast_txt" android:background="#33330000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="text" />
+    </LinearLayout>
+</LinearLayout>

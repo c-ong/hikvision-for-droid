@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0" android:minHeight="@dimen/common_listview_item_larger_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:common="http://schemas.android.com/apk/res/com.mcu.iVMS">
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:background="@drawable/list_equipment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.mcu.iVMS.component.AlwaysMarqueeTextView android:textSize="@dimen/common_textsize_small_18sp" android:textColor="@*android:color/black" android:ellipsize="marquee" android:id="@id/cloudmessage_set_devicetextview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="123456789123456789" android:singleLine="true" android:layout_weight="6.0" android:marqueeRepeatLimit="marquee_forever" />
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cloudmessage_set_button_container" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/cloudmessage_set_button" android:background="@drawable/cloudmessage_set_button_selector" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/common_listview_item_height" android:weightSum="1.0">
+        <TextView android:textSize="@dimen/common_textsize_small_12sp" android:id="@id/quality_custom_list_left_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nothing" />
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/quality_custom_list_radio_imgaview" android:background="@drawable/radiobox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+    </LinearLayout>
+</LinearLayout>
